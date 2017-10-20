@@ -1,7 +1,7 @@
 {
   "name": "react-native-parabola-card",
-  "version": "0.0.1",
-  "description": "react-native 添加购物车动效",
+  "version": “0.0.2”,
+  "description": "react-native 点击添加路径动效",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
