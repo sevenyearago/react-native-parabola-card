@@ -15,7 +15,7 @@
     "takeSnapshot"
   ],
   "dependencies": {
-    "react-native": "^0.41",
+    "react-native": "^0.41"
   },
   "author": "kerwinliu",
   "license": "MIT"
