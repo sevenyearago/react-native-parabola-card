@@ -7,6 +7,7 @@
 
 ### 用法
 ```javascript
+npm install react-native-parabola-card
 //引入
 import {Parabola,ParabolaImageContainer} from '@iqiyi/rn-parabola';
 //调用 ParabolaImageContainer 组件的 start 方法
