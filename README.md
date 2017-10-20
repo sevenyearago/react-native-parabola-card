@@ -1,4 +1,4 @@
-## qyparabola 添加购物车抛物线特效
+## 点击添加购物车路径特效
 ## demo
 ### npm install react-native-parabola-card
 <p align="center">
