@@ -9,7 +9,7 @@
 ### 用法
 ```javascript
 //引入
-import {Parabola,ParabolaImageContainer} from '@iqiyi/rn-parabola';
+import {Parabola,ParabolaImageContainer} from 'react-native-parabola-card';
 //调用 ParabolaImageContainer 组件的 start 方法
 showImg(options){
     this.refs.parabola.start(options,callback)
