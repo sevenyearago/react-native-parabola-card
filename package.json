@@ -1,6 +1,6 @@
 {
   "name": "react-native-parabola-card",
-  "version": “0.0.2”,
+  "version": "0.0.2",
   "description": "react-native 点击添加路径动效",
   "main": "index.js",
   "scripts": {

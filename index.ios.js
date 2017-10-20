@@ -97,11 +97,8 @@ export class ParabolaImageContainer extends Component{
         let animDuration = 400;
         let values = this.state.defaultAnimatedValues;
 
-        // values.translate.setValue(new  Point(0, 0));
-
         let commonConfig = {
-            duration: animDuration,
-            // easing: show ? Easing.out(Easing.back()) : Easing.inOut(Easing.quad),
+            duration: animDuration
         }
         const {endPointX,endPointY} = this.props
         Animated.parallel([
