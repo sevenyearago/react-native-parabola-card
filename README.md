@@ -1,4 +1,9 @@
 ## qyparabola 添加购物车抛物线特效
+## demo
+
+<p align="center">
+<img src="https://github.com/kliuj/react-native-parabola-card/blob/master/demo.gif">
+</p>
 
 ### 用法
 ```javascript
