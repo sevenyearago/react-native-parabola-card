@@ -1,0 +1,19 @@
+{
+  "name": "react-native-parabola-card",
+  "version": "0.0.1",
+  "description": "react-native 添加购物车动效",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "parabola",
+    "card",
+    "screenshoot",
+    "takeSnapshot"
+  ],
+  "author": "kerwinliu",
+  "license": "MIT"
+}
