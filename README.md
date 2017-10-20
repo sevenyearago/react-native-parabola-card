@@ -1,13 +1,13 @@
 ## qyparabola 添加购物车抛物线特效
 ## demo
-
+### npm install react-native-parabola-card
 <p align="center">
 <img src="https://github.com/kliuj/react-native-parabola-card/blob/master/demo.gif">
 </p>
+录制的gif是视频压缩的，所以看起来不够流畅，实际上ios模拟器和安卓真机没有这种抖动现象，可以查看ios和android.mp4
 
 ### 用法
 ```javascript
-npm install react-native-parabola-card
 //引入
 import {Parabola,ParabolaImageContainer} from '@iqiyi/rn-parabola';
 //调用 ParabolaImageContainer 组件的 start 方法
