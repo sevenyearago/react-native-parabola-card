@@ -12,7 +12,7 @@ _renderItem(item,i){
     return(
         <Parabola onPress={this.showImg.bind(this)} key={i}>
             <View style={styles.item} >
-                <QYImage source={{uri:item.icon}} style={{height:69,width:120}}/>
+                <Image source={{uri:item.icon}} style={{height:69,width:120}}/>
                 <Text style={{marginLeft:20}}>{item.gameName}</Text>
             </View>
         </Parabola>
@@ -44,6 +44,7 @@ render() {
 
 ```javascript
 //Parabola 用于包裹被点击的商品
+this.refs.parabola.start(options,callback)  callback 为完成动画的回调
 
 //ParabolaImageContainer  只需要传递 购物车坐标
 {
