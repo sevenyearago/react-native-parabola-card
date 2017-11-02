@@ -9,7 +9,8 @@ import {
     Dimensions,
     TouchableWithoutFeedback,
     Animated,
-    View
+    View,
+    UIManager
 } from 'react-native';
 const {width,height} = Dimensions.get('window')
 const ReactNativeComponentTree = require('ReactNativeComponentTree');
@@ -42,9 +43,9 @@ export  class Parabola extends Component{
     press(e){
         let currentT = e.currentTarget
         let cur = ReactNativeComponentTree.getInstanceFromNode(currentT);
-        cur._currentElement._owner._instance.measure((marginLeft, marginTop, width, height, left, top) => {
-            this.showImg(left,top,width,height,cur._currentElement)
-        })
+        UIManager.measure(currentT, (x, y, width, height, pageX, pageY) => {
+            this.showImg(pageX,pageY,width,height,cur._currentElement)
+        });
 
     }
     showImg(left,top,width,height,element){
