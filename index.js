@@ -84,7 +84,7 @@ export class ParabolaImageContainer extends Component{
         this.displayOptions = options
         this.setState({
             visible:true,
-            element:options.element
+            element:options.element.props.children
         })
         this._startAnimation(options,callback)
     }

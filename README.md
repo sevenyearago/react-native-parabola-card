@@ -12,11 +12,11 @@
 import {Parabola,ParabolaImageContainer} from 'react-native-parabola-card';
 //调用 ParabolaImageContainer 组件的 start 方法
 showImg(options){
-    this.refs.parabola.start(options,callback)
+    this.refs.parabola.start({...options,element:this.ele,callback)
 }
 _renderItem(item,i){
     return(
-        <Parabola onPress={this.showImg.bind(this)} key={i}>
+        <Parabola onPress={this.showImg.bind(this)} key={i} ref={(ele)=> this.ele = ele}>
             <View style={styles.item} >
                 <Image source={{uri:item.icon}} style={{height:69,width:120}}/>
                 <Text style={{marginLeft:20}}>{item.gameName}</Text>
@@ -50,6 +50,7 @@ render() {
 
 ```javascript
 //Parabola 用于包裹被点击的商品
+0.0.4
 this.refs.parabola.start(options,callback)  callback 为完成动画的回调
 
 //ParabolaImageContainer  只需要传递 购物车坐标
@@ -57,5 +58,10 @@ this.refs.parabola.start(options,callback)  callback 为完成动画的回调
 endPointX:number,//抛物线结束的位置，距离屏幕左边的距离，
 endPointY:number,//抛物线结束的位置，距离屏幕顶部的距离，
 }
+
+0.0.5
+兼容react 16 
+start 方法传入实例组件参数 element:this.ele
+this.refs.parabola.start({...options,element:this.ele,callback)
 
 ```
